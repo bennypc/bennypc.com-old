@@ -64,7 +64,7 @@ div {
 }
 .sidebar {
     height: 2500px;
-    width: 150px;
+    width: 10%;
     position: fixed;
     top: 0;
     left: 0;
