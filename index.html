@@ -10,7 +10,8 @@
         <link rel ="stylesheet" href="https://use.typekit.net/vrb2vor.css">
     </head>
     <body>
-        
+        <span style="font-size:42px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
         <h1 class="title"> Hey! My name is Benny Chinvanich</h1>
         <h2 class="introduction">I'm a first-year student studying Business and Computer Science at the University of British Columbia. <br>
             I am currently exploring both front-end and back-end development for multiple platforms.
@@ -31,7 +32,8 @@
         </ul>
         
         
-        <div class="sidebar">
+        <div id = "sidenav" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="https://github.com/bennypc" 
             class="nav-link" 
             target="_blank" 
@@ -49,11 +51,12 @@
                 </div>
             </a>
             <div>Projects</div>
+            
+            <div>Photography</div>
+            
             </div>
             
-            <div class="body-text">
-            <!-- body content -->
-            </div>
+            
 
         <style>
             h1 {
@@ -78,5 +81,7 @@
                 font-style: normal;
             }
         </style>
+
+        <script src="main.js"></script>
     </body>
 </html>
