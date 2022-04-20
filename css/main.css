@@ -35,10 +35,13 @@ ul,ol,dl,p {
 body {
     color: grey;
     font-size: 20px;
+    transition: background-color .5s;
+}
+.background-black-opacity-4 {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .photography_page
 {
-    background-color: white;
     transition: background-color 1s;
     
 }
