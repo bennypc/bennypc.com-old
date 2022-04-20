@@ -96,23 +96,17 @@ div {
     margin-left: 50px;
     cursor: pointer;
 }
-
+  .socials {
+    margin:1px;
+    padding:1px;
+    text-align:center;
+}
 div:hover {
     color:grey;
 
   }
 
-/*
-@media screen and (max-width: 1400px) {
-    div {
-        color: black;
-        font-size: 20px;
-        text-align: center; 
-    }
-    .sidebar {
-        display: none;
-    }
-}*/
+
 
 @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
