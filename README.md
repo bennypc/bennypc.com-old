@@ -1,3 +1,5 @@
 # bennypc.com
 
-Portfolio website
+Repository for portfolio website
+
+https://bennypc.com
