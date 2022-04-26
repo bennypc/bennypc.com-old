@@ -1,108 +1,116 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Benny Chinvanich</title>
-        <link rel="icon" href="images/favicon.ico" >
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel ="stylesheet" href="css/main.css">
-        <link rel ="stylesheet" href="https://use.typekit.net/vrb2vor.css">
-        <link rel ="stylesheet" href="css/tictactoe.css">
-    </head>
-    <body>
-        
-        <span style="font-size:42px;cursor:pointer" onclick="openNav()">&#9776;</span>
 
-        
-            <div id = "sidenav" class="sidebar">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    
-                <a href="index.html"><div>Home</div></a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Benny Chinvanich</title>
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/vrb2vor.css">
+    <link rel="stylesheet" href="css/tictactoe.css">
+</head>
 
-                <a href="photography_page.html"><div>Photography</div></a>
+<body>
 
-                <a href="projects.html"><div>Projects</div></a>
-    
-                <a href="https://github.com/bennypc" 
-                class="nav-link" 
-                target="_blank" 
-                rel="noopener noreferrer">
-                    <div>
-                        GitHub
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/in/benny-chinvanich-6182261a4/" 
-                class="nav-link" 
-                target="_blank" 
-                rel="noopener noreferrer">
-                    <div>
-                        LinkedIn
-                    </div>
-                </a>                
+    <span style="font-size:42px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
+    <div id="sidenav" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <a href="index.html">
+            <div>Home</div>
+        </a>
+
+        <a href="photography_page.html">
+            <div>Photography</div>
+        </a>
+
+        <a href="projects.html">
+            <div>Projects</div>
+        </a>
+
+        <a href="https://github.com/bennypc" class="nav-link" target="_blank" rel="noopener noreferrer">
+            <div>
+                GitHub
             </div>
-
-            <table>
-                <tr>
-                    <td class="cell" id="0"></td>
-                    <td class="cell" id="1"></td>
-                    <td class="cell" id="2"></td>
-                </tr>
-                <tr>
-                    <td class="cell" id="3"></td>
-                    <td class="cell" id="4"></td>
-                    <td class="cell" id="5"></td>
-                </tr>
-                <tr>
-                    <td class="cell" id="6"></td>
-                    <td class="cell" id="7"></td>
-                    <td class="cell" id="8"></td>
-                </tr>
-            </table>
-            
-            <div class="endgame">
-                <div class="text"></div>
-                <br>
-                <button onClick="startGame()">Replay</button>
+        </a>
+        <a href="https://www.linkedin.com/in/benny-chinvanich-6182261a4/" class="nav-link" target="_blank" rel="noopener noreferrer">
+            <div>
+                LinkedIn
             </div>
-            <div class = "selectSym">
-            <h1 class ="game">Select symbol:</h1>
-              <button onClick="selectSym('X')">X</button>
-              <button onClick="selectSym('O')">O</button>
-            </div>
+        </a>
+    </div>
+
+    <table>
+        <tr>
+            <td class="cell" id="0"></td>
+            <td class="cell" id="1"></td>
+            <td class="cell" id="2"></td>
+        </tr>
+        <tr>
+            <td class="cell" id="3"></td>
+            <td class="cell" id="4"></td>
+            <td class="cell" id="5"></td>
+        </tr>
+        <tr>
+            <td class="cell" id="6"></td>
+            <td class="cell" id="7"></td>
+            <td class="cell" id="8"></td>
+        </tr>
+    </table>
+
+    <div class="endgame">
+        <div class="text"></div>
+        <br>
+        <center><button id="replayBTN" onClick="startGame()">Replay</button></center>
+    </div>
+    <div class="selectSym">
+        <h1 class="game">Select symbol:</h1>
+        <button onClick="selectSym('X')">X</button>
+        <button onClick="selectSym('O')">O</button>
+    </div>
 
 
-        <style>
-            h1 {
-                font-family: futura-pt, sans-serif;
-                font-weight: 700;
-                font-style: normal;
-            }
-
-            h2 {
-                font-family: futura-pt, sans-serif;
-                font-weight: 300;
-                font-style: normal;
-            }
-            h3 {
-                font-family: futura-pt, sans-serif;
-                font-weight: 600;
-                font-style: normal;
-            }
-            b,ul,div {
-                font-family: futura-pt, sans-serif;
-                font-weight: 300;
-                font-style: normal;
-            }
-            td {
-                font-family: futura-pt, sans-serif;
-                font-weight: 600;
-                font-style: normal;
-            }
-        </style>
-
-        <script src="main.js"></script>
-        <script src="tictactoe-script.js"></script>
+    <style>
+        h1 {
+            font-family: futura-pt, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
         
-    </body>
+        h2 {
+            font-family: futura-pt, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        
+        h3 {
+            font-family: futura-pt, sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+        
+        b,
+        ul,
+        div {
+            font-family: futura-pt, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        
+        td {
+            font-family: futura-pt, sans-serif;
+            font-weight: 600;
+            font-style: normal;
+        }
+    </style>
+
+    <script src="main.js"></script>
+    <script src="tictactoe-script.js"></script>
+
+</body>
+
 </html>
