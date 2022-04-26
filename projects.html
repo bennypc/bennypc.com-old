@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel ="stylesheet" href="css/main.css">
         <link rel ="stylesheet" href="https://use.typekit.net/vrb2vor.css">
+        <link rel ="stylesheet" href="css/tictactoe.css">
     </head>
     <body>
         
@@ -40,7 +41,36 @@
                     </div>
                 </a>                
             </div>
+
+            <table>
+                <tr>
+                    <td class="cell" id="0"></td>
+                    <td class="cell" id="1"></td>
+                    <td class="cell" id="2"></td>
+                </tr>
+                <tr>
+                    <td class="cell" id="3"></td>
+                    <td class="cell" id="4"></td>
+                    <td class="cell" id="5"></td>
+                </tr>
+                <tr>
+                    <td class="cell" id="6"></td>
+                    <td class="cell" id="7"></td>
+                    <td class="cell" id="8"></td>
+                </tr>
+            </table>
             
+            <div class="endgame">
+                <div class="text"></div>
+            </div>
+            <div class = "selectSym">
+            <h1 class ="game">Select symbol:</h1>
+              <button onClick="selectSym('X')">X</button>
+              <button onClick="selectSym('O')">O</button>
+            </div>
+
+            <button onClick="startGame()">Replay</button>
+
         <style>
             h1 {
                 font-family: futura-pt, sans-serif;
@@ -63,9 +93,15 @@
                 font-weight: 300;
                 font-style: normal;
             }
+            td {
+                font-family: futura-pt, sans-serif;
+                font-weight: 600;
+                font-style: normal;
+            }
         </style>
 
         <script src="main.js"></script>
+        <script src="tictactoe-script.js"></script>
         
     </body>
 </html>
