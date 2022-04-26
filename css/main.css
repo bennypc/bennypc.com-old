@@ -11,6 +11,8 @@ h1 {
     text-align: center;
 }
 .game {
+  color: white;
+  text-align: center;
   font-size: 30px;
 }
 h2 {
