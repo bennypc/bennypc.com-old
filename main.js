@@ -29,3 +29,8 @@ if(window.screen.width > 1500){
 
     }
  }
+
+ function darkModeToggle() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+ }
