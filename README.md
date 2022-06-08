@@ -1,5 +1,5 @@
 # bennypc.com
 
-Repository for portfolio website
+Repository for portfolio website.
 
-https://bennypc.com
+URL: https://bennypc.com
